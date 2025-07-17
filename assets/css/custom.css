@@ -43,6 +43,7 @@
 
 :root{
 	--primary-color			: #0B0B38;
+	--primary-color2		: #773970;
 	--secondary-color		: #F8F8FF;
 	--text-color			: #555574;
 	--accent-color			: #a72434;
@@ -400,7 +401,7 @@ body{
 }
 
 .section-title h2{
-	font-size: 46px;
+	font-size: 38px;
 	font-weight: 700;
 	margin-bottom: 0;
 }
@@ -1282,7 +1283,7 @@ header.main-header .header-sticky.active{
 	border-radius: 40px;
 	height: calc(100% - 30px);
 	margin-bottom: 30px;
-	padding: 40px;
+	padding: 20px;
 }
 
 .service-header{
@@ -1290,8 +1291,8 @@ header.main-header .header-sticky.active{
 	align-items: center;
 	justify-content: space-between;
 	border-bottom: 1px solid var(--divider-color);
-	padding-bottom: 20px;
-	margin-bottom: 20px;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
 }
 
 .service-item-box{
@@ -1529,7 +1530,7 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .why-choose-us{
-	background: var(--primary-color) url('../images/why-choose-us-bg.svg') no-repeat;
+	background: var(--primary-color2) url('../images/why-choose-us-bg.svg') no-repeat;
 	background-position: center center;
 	background-size: cover;
 	padding: 100px 0 0;
@@ -1785,10 +1786,14 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .our-testimonials{
-	background: url('../images/testimonial-bg.png'), linear-gradient(180deg, var(--primary-color) 60%, var(--white-color) 40%);
+	background: url('../images/testimonial-bg.png'), linear-gradient(180deg, var(--accent-color) 60%, var(--white-color) 40%);
 	background-position: center center;
 	background-size: auto;
 	padding: 100px 0 50px;
+}
+.home-testmo .btn-default{
+	background: var(--white-color);
+	color: var(--accent-color);
 }
 
 .our-testimonials .section-title h2{
@@ -1800,7 +1805,7 @@ header.main-header .header-sticky.active{
 	box-shadow: 0px 12px 37.1px 0px #0000000D;
 	border: 1px solid var(--divider-color);
 	border-radius: 40px;
-	padding: 100px;
+	padding: 50px;
 }
 
 .testimonial-header{
@@ -2036,7 +2041,9 @@ header.main-header .header-sticky.active{
 /************************************/
 /***     13. Our Blog Post css	  ***/
 /************************************/
-
+.patient-safety-page.page-blog{
+	padding: 20px 0 20px;
+}
 .our-blog{
 	padding: 100px 0 70px;
 }
@@ -2154,14 +2161,17 @@ header.main-header .header-sticky.active{
 .working-time-box{
 	background-color: var(--primary-color);
 	border-radius: 40px;
-	padding: 40px;
+	padding: 25px;
 	margin-bottom: 40px;
+}
+.open-close p{
+	margin-bottom: 5px;
 }
 
 .working-box-title{
 	border-bottom: 1px solid var(--dark-divider-color);
-	padding-bottom: 30px;
-	margin-bottom: 30px;
+	padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .working-box-title h3{
@@ -2262,11 +2272,12 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .main-footer{
-	background: url(../images/hero-bg.svg), linear-gradient(90deg, #2C2C66 -10.82%, var(--primary-color) 56.59%);
+	/* background: url(../images/hero-bg.svg), linear-gradient(90deg, #2C2C66 -10.82%, var(--primary-color) 56.59%); */
+	background: url(../images/hero-bg.svg), linear-gradient(88deg, #773970 3.03%, #a72434 112.44%);
 	background-repeat: no-repeat;
     background-position: left center;
     background-size: contain;
-	padding: 100px 0 0;
+	padding: 50px 0 0;
 }
 
 .about-footer{
@@ -2325,7 +2336,7 @@ header.main-header .header-sticky.active{
 }
 
 .footer-links ul li::marker{
-	color: var(--accent-color);
+	color: var(--white-color);
 }
 
 .footer-links ul li a{
@@ -2334,7 +2345,7 @@ header.main-header .header-sticky.active{
 }
 
 .footer-links ul li:hover a{
-	color: var(--accent-color);
+	color: var(--white-color);
 }
 
 .footer-contact-details .footer-info-box{
@@ -2364,8 +2375,8 @@ header.main-header .header-sticky.active{
 
 .footer-copyright{
 	border-top: 1px solid var(--dark-divider-color);
-	padding: 40px 0;
-	margin-top: 80px;
+	padding: 20px 0;
+    margin-top: 50px;
 }
 
 .footer-copyright-text p{
@@ -5292,5 +5303,31 @@ ul.t-social {
 .main_header_area .topbar-wrap .t-social li a {
   color: #ffffff;
   padding: 8px;
+}
+
+.weight-footer-content ul li {
+    margin-bottom: 14px;
+}
+.weight-footer-content ul li {
+    font-size: 16px;
+    color: var(--white-color);
+    text-decoration: none;
+    line-height: 25px;
+}
+.weight-footer-content .list-unstyled{
+	padding-left: 5px;
+}
+
+.weight-footer-content ul li a {
+    font-size: 16px;
+    color: var(--white-color);
+}
+.weight-footer-content ul li span {
+    color: #0b0b38;
+    font-weight: 700;
+	text-transform: none;
+}
+.safety-section .safety-p{
+	margin-top: 15px;
 }
 /*rahul css header*/
